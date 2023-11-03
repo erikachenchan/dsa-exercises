@@ -20,9 +20,20 @@ public class SortingAns {
         return smallest;
     }
 
+    public static int biggest(int[] array) {
+        int biggest = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] > biggest) {
+                biggest = array[i];
+            }
+        }
+        return biggest;
+    }
+
     public static void main(String[] args) {
         int[] numbers = {6, 5, 8, 7, 11};
         System.out.println("Smallest: " + smallest(numbers));
+        System.out.println("Biggest: " + biggest(numbers));
     }
 
 }
