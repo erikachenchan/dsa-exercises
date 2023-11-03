@@ -30,10 +30,42 @@ public class SortingAns {
         return biggest;
     }
 
+    public static int indexOfSmallest(int[] array) {
+        int smallest = array[0];
+        int index = 0;
+
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] < smallest) {
+                smallest = array[i];
+                index = i;
+            }
+        }
+        return index;
+
+    }
+
+    public static int indexOfBiggest(int[] array) {
+        int biggest = array[0];
+        int index = 0;
+
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] > biggest) {
+                biggest = array[i];
+                index = i;
+            }
+        }
+        return index;
+    }
+
     public static void main(String[] args) {
-        int[] numbers = {6, 5, 8, 7, 11};
+        int[] numbers = {1, 5, 8, 77, 20};
         System.out.println("Smallest: " + smallest(numbers));
         System.out.println("Biggest: " + biggest(numbers));
+
+        System.out.println("");
+        System.out.println("Index of the smallest number " + smallest(numbers) + " is : " + indexOfSmallest(numbers));
+        System.out.println("Index of the biggest number " + biggest(numbers) + " is : " + indexOfBiggest(numbers));
+
     }
 
 }
