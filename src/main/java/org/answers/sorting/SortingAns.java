@@ -57,15 +57,37 @@ public class SortingAns {
         return index;
     }
 
+    public static int indexOfSmallestForm(int[] array, int startIndex) {
+        int index = startIndex;
+        int smallest = array[index];
+
+        for (int i = startIndex; i < array.length; i++) {
+            if (array[i] < smallest) {
+                smallest = array[i];
+                index = i;
+            }
+        }
+
+        return index;
+    }
+
     public static void main(String[] args) {
         int[] numbers = {1, 5, 8, 77, 20};
         System.out.println("Smallest: " + smallest(numbers));
         System.out.println("Biggest: " + biggest(numbers));
 
+        // part 2
         System.out.println("");
         System.out.println("Index of the smallest number " + smallest(numbers) + " is : " + indexOfSmallest(numbers));
         System.out.println("Index of the biggest number " + biggest(numbers) + " is : " + indexOfBiggest(numbers));
 
+        // part 3
+        System.out.println("");
+        System.out.println("The following array list are: {-1, 6, 9, 8, 12}");
+        int[] numberList = {-1, 6, 9, 8, 12};
+        System.out.println(indexOfSmallestForm(numberList, 2));
+        System.out.println(indexOfSmallestForm(numberList, 3));
+        System.out.println(indexOfSmallestForm(numberList, 4));
     }
 
 }
