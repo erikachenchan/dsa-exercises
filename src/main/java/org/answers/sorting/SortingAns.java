@@ -1,5 +1,7 @@
 package org.answers.sorting;
 
+import java.util.Arrays;
+
 public class SortingAns {
     public static int smallest(int[] array) {
 
@@ -71,23 +73,45 @@ public class SortingAns {
         return index;
     }
 
+    public static void swap(int[] array, int index1, int index2) {
+        int temp = array[index1];
+        array[index1] = array[index2];
+        array[index2] = temp;
+
+    }
+
     public static void main(String[] args) {
-        int[] numbers = {1, 5, 8, 77, 20};
-        System.out.println("Smallest: " + smallest(numbers));
-        System.out.println("Biggest: " + biggest(numbers));
+//        int[] numbers = {1, 5, 8, 77, 20};
+//        System.out.println("Smallest: " + smallest(numbers));
+//        System.out.println("Biggest: " + biggest(numbers));
+//
+//        // part 2
+//        System.out.println("");
+//        System.out.println("Index of the smallest number " + smallest(numbers) + " is : " + indexOfSmallest(numbers));
+//        System.out.println("Index of the biggest number " + biggest(numbers) + " is : " + indexOfBiggest(numbers));
+//
+//        // part 3
+//        System.out.println("");
+//        System.out.println("The following array list are: {-1, 6, 9, 8, 12}");
+//        int[] numberList = {-1, 6, 9, 8, 12};
+//        System.out.println(indexOfSmallestForm(numberList, 2));
+//        System.out.println(indexOfSmallestForm(numberList, 3));
+//        System.out.println(indexOfSmallestForm(numberList, 4));
 
-        // part 2
-        System.out.println("");
-        System.out.println("Index of the smallest number " + smallest(numbers) + " is : " + indexOfSmallest(numbers));
-        System.out.println("Index of the biggest number " + biggest(numbers) + " is : " + indexOfBiggest(numbers));
+        // part 4
+        int[] number = {3, 2, 5, 4, 8};
 
-        // part 3
+        System.out.println("Printing numbers");
+        System.out.println(Arrays.toString(number));
         System.out.println("");
-        System.out.println("The following array list are: {-1, 6, 9, 8, 12}");
-        int[] numberList = {-1, 6, 9, 8, 12};
-        System.out.println(indexOfSmallestForm(numberList, 2));
-        System.out.println(indexOfSmallestForm(numberList, 3));
-        System.out.println(indexOfSmallestForm(numberList, 4));
+        System.out.println("Swapping Index 1 and 2");
+        swap(number, 1, 0);
+        System.out.println(Arrays.toString(number));
+        System.out.println("");
+        System.out.println("Swapping Index 0 and 3");
+        swap(number, 0, 3);
+        System.out.println(Arrays.toString(number));
+
     }
 
 }
