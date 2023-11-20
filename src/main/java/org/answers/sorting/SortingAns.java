@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 /**
  * This exercises covers about Sorting numbers, from smallest to biggest
+ * exercises can be found here https://java-programming.mooc.fi/part-7/2-algorithms 
  * */
 public class SortingAns {
     public static int smallest(int[] array) {
@@ -84,22 +85,22 @@ public class SortingAns {
     }
 
     public static void main(String[] args) {
-//        int[] numbers = {1, 5, 8, 77, 20};
-//        System.out.println("Smallest: " + smallest(numbers));
-//        System.out.println("Biggest: " + biggest(numbers));
-//
-//        // part 2
-//        System.out.println("");
-//        System.out.println("Index of the smallest number " + smallest(numbers) + " is : " + indexOfSmallest(numbers));
-//        System.out.println("Index of the biggest number " + biggest(numbers) + " is : " + indexOfBiggest(numbers));
-//
-//        // part 3
-//        System.out.println("");
-//        System.out.println("The following array list are: {-1, 6, 9, 8, 12}");
-//        int[] numberList = {-1, 6, 9, 8, 12};
-//        System.out.println(indexOfSmallestForm(numberList, 2));
-//        System.out.println(indexOfSmallestForm(numberList, 3));
-//        System.out.println(indexOfSmallestForm(numberList, 4));
+        int[] numbers = {1, 5, 8, 77, 20};
+        System.out.println("Smallest: " + smallest(numbers));
+        System.out.println("Biggest: " + biggest(numbers));
+
+        // part 2
+        System.out.println("");
+        System.out.println("Index of the smallest number " + smallest(numbers) + " is : " + indexOfSmallest(numbers));
+        System.out.println("Index of the biggest number " + biggest(numbers) + " is : " + indexOfBiggest(numbers));
+
+        // part 3
+        System.out.println("");
+        System.out.println("The following array list are: {-1, 6, 9, 8, 12}");
+        int[] numberList = {-1, 6, 9, 8, 12};
+        System.out.println(indexOfSmallestForm(numberList, 2));
+        System.out.println(indexOfSmallestForm(numberList, 3));
+        System.out.println(indexOfSmallestForm(numberList, 4));
 
         // part 4
         int[] number = {3, 2, 5, 4, 8};
