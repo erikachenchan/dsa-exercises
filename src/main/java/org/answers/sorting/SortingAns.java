@@ -2,6 +2,9 @@ package org.answers.sorting;
 
 import java.util.Arrays;
 
+/**
+ * This exercises covers about Sorting numbers, from smallest to biggest
+ * */
 public class SortingAns {
     public static int smallest(int[] array) {
 
