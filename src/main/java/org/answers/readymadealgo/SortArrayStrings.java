@@ -10,7 +10,7 @@ public class SortArrayStrings {
 
     public static void main(String[] args) {
         System.out.println("Array of Strings");
-        String[] arrayString = {"nami", "chopper", "brooke", "zoro", "luffy", "usopp", "franky", "robin"};
+        String[] arrayString = {"nami", "chopper", "brooke", "zoro", "Luffy", "usopp", "franky", "robin"};
         System.out.println(Arrays.toString(arrayString));
         sort(arrayString);
         System.out.println(Arrays.toString(arrayString));
