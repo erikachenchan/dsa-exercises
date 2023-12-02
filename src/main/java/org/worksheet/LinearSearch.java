@@ -25,6 +25,7 @@ public class LinearSearch {
 //        System.out.println(linearSearch(myArray, valueToSearch));
         System.out.println("");
 
+        System.out.println("Searching the index of 9..");
         System.out.println(Arrays.toString(myArray));
         int index = linearSearch(myArray, valueToSearch);
         if (index != -1) {
